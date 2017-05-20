@@ -13,6 +13,12 @@ int main(void)
     printf("How many minutes is your shower?\n");
     int x;
     scanf("%d", &x);
+    //ensure user does not give negative value
+    if (x < 0)
+    {
+        printf("Must give a positive int!\n");
+        return 1;
+    }
     //calculate number of bottles and output
     x = (x * 192) / 16;
     printf("You used %d bottles of water!\n", x);

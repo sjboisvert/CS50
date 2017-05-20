@@ -11,7 +11,7 @@ int main(void)
     //ensure user's input is within limits
     if (height < 1 || height > 24)
     {
-        printf("Height must be greater than 1 and less than 24!");
+        printf("Height must be greater than 1 and less than 24!\n");
         return 1;
     }
     //print stairs to screen
